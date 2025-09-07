@@ -10,7 +10,7 @@ services:
       - key: PORT
         value: 10000
       - key: PYTHON_VERSION
-        value: 3.10.12
+        value: 3.10.13
     autoDeploy: true
     branch: main  # Replace with your branch name if not using "main"
     repo: https://github.com/Faithc98/SmileDesignsX
