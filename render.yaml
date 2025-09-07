@@ -1,16 +1,10 @@
 services:
   - type: web
     name: smiledesignsx-backend
-    runtime: python
-    region: oregon
-    plan: free  # Change to 'starter' or 'standard' if you outgrow free tier
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host=0.0.0.0 --port=10000
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    workingDir: backend
     envVars:
-      - key: PORT
-        value: 10000
       - key: PYTHON_VERSION
         value: 3.10.13
-    autoDeploy: true
-    branch: main  # Replace with your branch name if not using "main"
-    repo: https://github.com/Faithc98/SmileDesignsX
