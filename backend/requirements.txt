@@ -1,1 +1,14 @@
-git-filter-repo==2.47.0
+fastapi==0.100.0
+uvicorn[standard]==0.22.0
+python-multipart==0.0.6
+pydantic==1.10.10
+pillow==10.0.1
+torch==2.2.0
+torchvision==0.17.0
+numpy==1.26.4
+scikit-image==0.22.0
+opencv-python==4.9.0.80
+mediapipe==0.10.14
+python-jose==3.3.0
+bcrypt==4.1.2
+python-dotenv==1.0.1
