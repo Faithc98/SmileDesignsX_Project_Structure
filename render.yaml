@@ -2,15 +2,11 @@ services:
   - type: web
     name: smiledesignsx-backend
     env: python
-    plan: free
     region: oregon
     buildCommand: pip install -r backend/requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
-    workingDir: backend
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.10.0
-
+    startCommand: python3 -m uvicorn backend.main:app --host 0.0.0.0 --port 10000
+    plan: free
+    branch: main
 
 
 
