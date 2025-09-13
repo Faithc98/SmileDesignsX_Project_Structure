@@ -1,7 +1,31 @@
-fastapi==0.100.0
-uvicorn[standard]==0.22.0
+# Core web framework
+fastapi==0.103.0
+uvicorn==0.22.0
+
+# Data validation & parsing
+pydantic==1.10.12
+
+# File uploads (needed for /api/upload with STL + photo)
 python-multipart==0.0.6
-pydantic==1.10.10
-python-jose==3.3.0
-bcrypt==4.1.2
-python-dotenv==1.0.1
+
+# Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Image handling (if you process JPEG/PNG mockups)
+Pillow==10.0.0
+
+# STL / 3D mesh handling
+numpy==1.25.2
+trimesh==3.23.5
+
+# AI/ML (baseline for PyTorch model integration)
+torch==2.0.1
+torchvision==0.15.2
+
+# Environment management
+python-dotenv==1.0.0
+
+# Testing
+pytest==7.4.0
+httpx==0.24.1
